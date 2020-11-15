@@ -11,11 +11,12 @@
   --bg-primary: #2E3440;
   --bg-secondary: rgba(59,66,82,.5);
   --bg-hover: rgba(41,120,173,.5);
-  --color-primary: #ECEFF4;
+  --color-primary: #D8DEE9;
   --color-secondary: #81A1C1;
-  --color-success: #66BB6A;
-  --color-warning: #F57C00;
-  --color-danger: #DC3545;
+  --color-white: #ECEFF4;
+  --color-success: #A3BE8C;
+  --color-warning: #D08770;
+  --color-danger: #BF616A;
   --padding: 1rem;
   --rounded: 0.25rem;
   --shadow: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.12)
@@ -229,8 +230,8 @@ button:hover {
   padding: 0.5em 1em 0.5em;
 }
 .searchbar input:focus {
-  color: #D8DEE9;
-  background-color: rgba(183,187,195, .7);
+  color: #E5E9F0;
+  background-color: rgba(94,129,172, .7);
 }
 textarea:focus, input:focus{
     outline: none;
@@ -276,6 +277,9 @@ textarea:focus, input:focus{
 #apps-loop a {
   text-decoration: none;
   color: var(--color-primary);
+}
+#apps-loop a:hover {
+  color: var(--color-white);
 }
 
 .apps-item {
@@ -351,7 +355,7 @@ textarea:focus, input:focus{
   transition: padding .3s;
 }
 .links-item a:hover {
-  color: var(--color-secondary);
+  color: var(--color-white);
   padding-left: 1em;
 }
 /*.links-item a:hover::before {
@@ -473,6 +477,12 @@ textarea:focus, input:focus{
 }
 .modaloptions a:before {
 	content: "> ";
+}
+
+.credits {
+	width: 50%;
+	float: left;
+	padding-left: 10px;
 }
 
 
