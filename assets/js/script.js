@@ -2,7 +2,7 @@
  * Evening Startpage
  * Inspired by https://github.com/jeroenpardon/sui
  * You can find it at https://github.com/TB-96/Evening-Startpage
- * Made by TB-96 2020
+ * Made by TB-96 2021
  *
  */
 
@@ -63,7 +63,7 @@ function engines () {
 	g: ['https://google.com/search?q=', 'Google'],
 	i: ['https://google.com/search?tbm=isch&q=', 'Google Images'],
 	yt: ['https://youtube.com/results?search_query=', 'Youtube'],
-  s: ['https://stackoverflow.com/search?q=', 'Stackoverflow'],
+	s: ['https://stackoverflow.com/search?q=', 'Stackoverflow'],
 	a: ['https://web.archive.org/web/*/', 'Archive'],
 	w: ['https://en.wikipedia.org/w/index.php?search=', 'Wikipedia'],
   };
@@ -99,7 +99,7 @@ document.onkeypress = (e) => {
 
       if (e.key == 'Enter') {
         if (prefix.indexOf('!') == 0)
-          (engine = engines[prefix.substr(1)][0], str = 3);
+          (engine = engines[prefix.substr(1)][0], str = prefix.length + 1);
 
         window.location = engine + args.join(' ').substr(str).toString().replace(/\s+/m, '%20');
       } else if (e.keyCode == 27)
